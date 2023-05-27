@@ -1,5 +1,5 @@
 
-# Ask Your Document - A Streamlit Application
+# Ask Your Document
 
 This tool enables users to interact with their documents, bringing a new level of accessibility and user-friendliness to information retrieval via semantic search using Langchain.
 The app allows you to upload a PDF document and ask questions related to the contents of the document. It uses OpenAI's _text-davinci-003_ Model and embeddings  to parse and understand the text of the document, enabling it to answer questions related to the content.
