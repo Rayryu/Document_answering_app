@@ -1,8 +1,7 @@
 
 # Ask Your Document
 
-This tool enables users to interact with their documents, bringing a new level of accessibility and user-friendliness to information retrieval via semantic search using Langchain.
-The app allows you to upload a PDF document and ask questions related to the contents of the document. It uses OpenAI's _text-davinci-003_ Model and embeddings  to parse and understand the text of the document, enabling it to answer questions related to the content.
+Ask Your Document is an interactive document exploration tool, crafted to bring sophisticated document retrieval and analysis at your fingertips. This application lets users upload multiple PDF documents and ask queries regarding their content, all in a user-friendly manner. Powered by OpenAI's text-davinci-003 model, Hugging Face's instructor-xl model, and the Langchain library, the tool parses, understands, and answers questions related to your documents content.
 
 ## Prerequisites
 Please refer to the `requirements.txt` file for a full list of dependencies.
@@ -23,6 +22,7 @@ Please refer to the `requirements.txt` file for a full list of dependencies.
 
 4. Create a `.env` file and add your OPENAI API key:
     `OPENAI_API_KEY = <YOUR_KEY>`
+	`HUGGINGFACEHUB_API_TOKEN = <YOUR_KEY>`
 
 ## Usage
 
@@ -36,7 +36,8 @@ This will start the Streamlit server and the application will be accessible at `
 
 1.  When the application is launched, you can upload your PDF document using the file uploader option.
 2.  Once the PDF is uploaded, the application reads the document, extracts the text, and splits it into manageable chunks.
-3.  Using the OpenAI Embeddings, embeddings for each chunk are created and stored in a knowledge base.
-4.  You can then type a question related to the document's content in the provided text input field.
+3.  Using the OpenAI or Instructor Embeddings, embeddings for each chunk are created and stored in a knowledge base.
+4.  You can then type a question related to the documents content in the provided text input field.
 5.  The application finds the chunks most similar to your question and uses a Language Learning Model (LLM) to generate a response.
 6.  The answer to your question is displayed on the screen.
+7. You can continue the discussion with your document in a chatbot-like conversation.
