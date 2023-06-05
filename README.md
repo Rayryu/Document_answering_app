@@ -3,6 +3,8 @@
 
 Ask Your Document is an interactive document exploration tool, crafted to bring sophisticated document retrieval and analysis at your fingertips. This application lets users upload multiple PDF documents and ask queries regarding their content, all in a user-friendly manner. Powered by OpenAI's text-davinci-003 model, Hugging Face's instructor-xl model, and the Langchain library, the tool parses, understands, and answers questions related to your documents content.
 
+![image](https://github.com/Rayryu/Document_answering_app/assets/36736908/a2992c3c-0530-4cf3-b6a2-7935c7a906ec)
+
 ## Prerequisites
 Please refer to the `requirements.txt` file for a full list of dependencies.
 
@@ -41,3 +43,5 @@ This will start the Streamlit server and the application will be accessible at `
 5.  The application finds the chunks most similar to your question and uses a Language Learning Model (LLM) to generate a response.
 6.  The answer to your question is displayed on the screen.
 7. You can continue the discussion with your document in a chatbot-like conversation.
+
+
